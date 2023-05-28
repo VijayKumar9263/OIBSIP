@@ -1,0 +1,331 @@
+/* Default CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+/* Background CSS */
+
+body{
+    background: aliceblue;
+    min-height: 200vh;
+    background:rgba(0, 0, 0, 0.2) url(Images/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    
+}
+
+/* Navigation Bar CSS */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: 0.6%;
+    padding: 10px 25px;
+    margin: 0;
+    background-color: #ffffff63;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    
+}
+
+nav .logo{
+    position: relative;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+/* Service Drop Down CSS */
+
+.drop-down-menu{
+    text-transform: none;
+    display: none;
+    position: absolute;
+    width: 220px;    
+}
+
+.menu:hover .drop-down-menu{
+    display: block;
+    font-size: medium;
+}
+
+.drop-down-list:hover{
+    background-color: #ffffff63;    
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li{
+    position: relative;
+    list-style: none;
+    font-size: larger;
+}
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 800px;
+    transition: 0.6s;
+    font-style: bold;
+    font-size: larger;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+a:hover{
+    color: black;
+}
+
+/* Home Page Text CSS*/
+
+h1{
+    text-align: center;
+    padding-top: 200px;
+    color: floralwhite;
+    font-size: 8vh;
+    color: rgb(251, 255, 0);
+  }
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(251, 255, 0);
+    font-size: 7vh;
+}
+
+h3{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(251, 255, 0);
+    font-size: 8vh;
+    padding-bottom: 0%;
+    
+}
+
+/* Login Page CSS */
+
+img{
+    width: 100px;
+    height: auto;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    margin: 0%;
+    align-items: center;
+    
+}
+
+.container{
+    width: 380px;
+    margin-top: 20vh;
+    margin-left: 75vh;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #333;
+}
+
+.header{
+    text-align: center;
+    padding-top: 75px;
+}
+
+.header .heading{
+    color: #333;
+    font-size: 45px;
+    margin-bottom: 0px;
+    padding-top: 0%;
+    padding-bottom: 10%;
+}
+
+.main{
+    text-align: center;
+}
+
+.main input, button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.main button{
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.main button:hover {
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+
+input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+
+.main span{
+    position: relative;
+}
+
+.main i{
+    position: absolute;
+    left: 15px;
+    color: #333;
+    font-size: 16px;
+    top: 2px;
+    
+}
+
+/* Library Card Service */
+
+.lcform{
+    width: 420px;
+    margin-top: 20vh;
+    margin-left: 75vh;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #333;
+}
+
+h4{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgb(251, 255, 0);
+    padding-left: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    padding-right: 5vh;
+    align-items: center;
+}
+
+label{
+    padding-left: 5vh; 
+    padding-right: 5vh;
+    padding-bottom: 5vh; 
+    color: #ffffff;
+}
+
+/* i have use .lc instead of input beacuse 
+i have already used input in login page and 
+when i use input again then it make the chenges
+ in previous one also */
+
+.lc , select , option{
+    position: relative;
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 30px;
+    margin-left: 5vh;
+}
+
+.lcform{
+    padding-left:5vh;
+}
+
+.bucket{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+  .lib ,.download-btn ,.download-btn:hover{
+    margin-right: 5vh;
+
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+
+    background-color: RoyalBlue;
+  }
+
+  .bus ,.download-btn ,.download-btn:hover{
+    margin-right: 5vh;
+
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+
+    background-color: RoyalBlue;
+  } 
+
+  .id ,.download-btn ,.download-btn:hover{
+    margin-right: 5vh;
+
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+
+    background-color: RoyalBlue;
+  } 
+
+  .footer{
+   
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: 0.6%;
+    padding: 10px 25px;
+    margin: 0;
+    
+}   
+
+p{
+    font-size: larger;
+    padding-top: 100%;
+    padding-bottom: 3VH;
+}
