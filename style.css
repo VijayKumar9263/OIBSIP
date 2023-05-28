@@ -24,7 +24,7 @@ body{
 /* Navigation Bar CSS */
 
 nav{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,7 +55,7 @@ nav .logo{
 .drop-down-menu{
     text-transform: none;
     display: none;
-    position:absolute;
+    position: absolute;
     width: 220px;    
 }
 
@@ -96,9 +96,11 @@ nav ul li a{
     font-style: bold;
     font-size: larger;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 a:hover{
     color: black;
 }
@@ -271,17 +273,6 @@ when i use input again then it make the chenges
     justify-content: center;
 }
 
-.box{
-    height: 66px;
-    margin-left: 15vh;
-    
-    border-style: solid;
-    border-width: 2px;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.1)
-}
-
   .lib ,.download-btn ,.download-btn:hover{
     margin-right: 5vh;
 
@@ -321,7 +312,7 @@ when i use input again then it make the chenges
     background-color: RoyalBlue;
   } 
 
-  footer {
+  .footer{
    
     height: 20vh;
     display: flex;
@@ -333,7 +324,7 @@ when i use input again then it make the chenges
     
 }   
 
-p , a{
+p{
     font-size: larger;
     padding-top: 100%;
     padding-bottom: 3VH;
